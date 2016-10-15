@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo "Deploying app to /Library/WebServer/Documents/chat-app"
+sudo cp -r . /Library/WebServer/Documents/chat-app
+

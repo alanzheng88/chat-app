@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat App</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+</head>
+<body>
+  <main>
+    <div id="wrapper">
+      <h1>Chat App</h1>
+
+      <ol id="messages">
+      </ol>
+
+      <form id="chatform">
+        <input type="text" id="username" placeholder="Name">
+        <input type="text" id="message" placeholder="Enter Message Here">
+        <button id="send-button">Send</button>
+      </form>
+
+    </div>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
