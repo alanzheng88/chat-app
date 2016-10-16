@@ -1,6 +1,9 @@
 $(function(){
-
   var socket = io();
+
+  var getListHtml = function(val) {
+    return '<li>' + val + '</li>';
+  }
 
   $('#chatform').submit(function() {
     var username = $('#username').val();
@@ -13,7 +16,7 @@ $(function(){
   })
 
   socket.on('message', function (msg) {
-    var formattedMessage = '<li>' + msg + '</li>';
-    $('#messages').append(formattedMessage);
+    $('#messages').append(getListHtml(msg));
   });
+
 });
